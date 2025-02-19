@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 653804488}
   m_Layer: 0
   m_Name: Lake
-  m_TagString: Lake
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -489,7 +489,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.24697402, g: 0.6981132, b: 0.56531376, a: 1}
+  m_Color: {r: 0.24705881, g: 0.5388576, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

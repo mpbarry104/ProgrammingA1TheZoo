@@ -51,7 +51,7 @@ public class Raccoon : Animal
 {
     public bool IsNocturnal { get; set; }
 
-    public Raccoon() : base("Raccoon", 5f, 60f, 50f, false, true)
+    public Raccoon() : base("Raccoon", 5f, 70f, 50f, false, true)
     {
         IsNocturnal = true;
     }
