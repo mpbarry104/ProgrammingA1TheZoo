@@ -12,11 +12,11 @@ public class Raccoon : Animal
 
     public override void MakeSound()
     {
-        Console.WriteLine("Raccoon chatters and growls.");
+        Debug.Log("Raccoon chatters and growls.");
     }
 
     public void Scavenge()
     {
-        Console.WriteLine("Raccoon is rummaging through trash!");
+       Debug.Log("Raccoon is rummaging through trash!");
     }
 }

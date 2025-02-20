@@ -5,18 +5,18 @@ public class Octopus : Animal
 {
     public bool CanRegenerate { get; set; }
 
-    public Octopus() : base("Axolotl", 15f, 50f, 20f, false, false)
+    public Octopus() : base("Octopus", 3f, 30f, 100f, false, false)
     {
         CanRegenerate = true;
     }
 
     public override void MakeSound()
     {
-        Console.WriteLine("Octopus makes a soft bubbling sound.");
+        Debug.Log("Octopus makes a soft bubbling sound.");
     }
 
     public void Regenerate()
     {
-        Console.WriteLine("Octopus is regenerating its lost leg!");
+       Debug.Log("Octopus is regenerating its lost leg!");
     }
 }

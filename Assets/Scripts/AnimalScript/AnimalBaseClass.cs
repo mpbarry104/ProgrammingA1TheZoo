@@ -1,6 +1,7 @@
 using System;
+using UnityEngine;
 
-public abstract class Animal
+public abstract class Animal : MonoBehaviour
 {
     public string Name { get; set; }
     public float Lifespan { get; set; }

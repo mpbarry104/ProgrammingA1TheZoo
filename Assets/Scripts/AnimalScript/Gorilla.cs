@@ -12,10 +12,10 @@ public class Gorilla : Animal
 
     public override void MakeSound()
     {
-        Console.WriteLine("Gorilla beats its chest and grunts.");
+        Debug.Log("Gorilla beats its chest and grunts.");
     }
     public void ClimbTrees()
     {
-        Console.WriteLine("Gorilla is climbing a tree!");
+        Debug.Log("Gorilla is climbing a tree!");
     }
 }

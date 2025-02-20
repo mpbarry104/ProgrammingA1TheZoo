@@ -12,11 +12,11 @@ public class Penguin : Animal
 
     public override void MakeSound()
     {
-        Console.WriteLine("Penguin makes a honking noise.");
+        Debug.Log("Penguin makes a honking noise.");
     }
 
     public void Swim()
     {
-        Console.WriteLine("Penguin is swimming in cold waters!");
+        Debug.Log("Penguin is swimming in cold waters!");
     }
 }
