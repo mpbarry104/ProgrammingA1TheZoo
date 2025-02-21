@@ -8,6 +8,7 @@ TagManager:
   - Arctic
   - Mountain
   - Ocean
+  - Octopus
   layers:
   - Default
   - TransparentFX
