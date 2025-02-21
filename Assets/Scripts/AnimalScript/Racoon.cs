@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Raccoon : Animal
+public class Raccoon : Animal, IInteractable
 {
     public bool IsNocturnal { get; set; }
 
@@ -17,6 +17,12 @@ public class Raccoon : Animal
 
     public void Scavenge()
     {
-       Debug.Log("Raccoon is rummaging through trash!");
+        Debug.Log("Raccoon is rummaging through trash!");
+    }
+
+    public void Interact()
+    {
+        Debug.Log("You go to pet the Raccoon but it hisses at you!");
+        MakeSound();
     }
 }

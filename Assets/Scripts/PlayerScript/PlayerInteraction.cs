@@ -14,21 +14,25 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Octopus")) 
-        {
-            currentInteractable = other.GetComponent<IInteractable>();
-        }
-            
-        else if (other.CompareTag("Penguin")) 
+        if (other.CompareTag("Octopus"))
         {
             currentInteractable = other.GetComponent<IInteractable>();
         }
 
-        else if (other.CompareTag("Sign")) 
+        else if (other.CompareTag("Penguin"))
         {
             currentInteractable = other.GetComponent<IInteractable>();
         }
-    
+
+        else if (other.CompareTag("Sign"))
+        {
+            currentInteractable = other.GetComponent<IInteractable>();
+        }
+
+        else if (other.CompareTag("Raccoon"))
+        {
+            currentInteractable = other.GetComponent<IInteractable>();
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -46,6 +50,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable = null;
         }
+
+        else if (other.CompareTag("Raccoon"))
+        {
+            currentInteractable = null;
+        }
     }
-    
+
 }
