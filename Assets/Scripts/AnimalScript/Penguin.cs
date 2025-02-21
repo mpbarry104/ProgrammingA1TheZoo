@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Penguin : Animal
+public class Penguin : Animal, IInteractable
 {
     public bool CanSwim { get; set; }
 
@@ -18,5 +18,11 @@ public class Penguin : Animal
     public void Swim()
     {
         Debug.Log("Penguin is swimming in cold waters!");
+    }
+    
+    public void Interact()
+    {
+        Debug.Log("You pet the Penguin and it watches surfs up in 4k.");
+        MakeSound();
     }
 }
