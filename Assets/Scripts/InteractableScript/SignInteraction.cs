@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class SignInteraction2D : MonoBehaviour
+public class SignInteraction2D : MonoBehaviour, IInteractable
 {
     public GameObject textUI;
     private bool playerInRange = false;
@@ -30,5 +30,10 @@ public class SignInteraction2D : MonoBehaviour
             playerInRange = false;
             textUI.SetActive(false);
         }
+    }
+
+    public void Interact()
+    {
+        Debug.Log("You Read the sign.");
     }
 }

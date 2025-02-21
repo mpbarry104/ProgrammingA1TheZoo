@@ -977,6 +977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 164157136723221969, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
+      propertyPath: m_TagString
+      value: Sign
+      objectReference: {fileID: 0}
     - target: {fileID: 3377417843970630864, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
       propertyPath: textUI
       value: 
@@ -3707,6 +3711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forest Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 164157136723221969, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
+      propertyPath: m_TagString
+      value: Sign
+      objectReference: {fileID: 0}
     - target: {fileID: 3377417843970630864, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
       propertyPath: textUI
       value: 
@@ -4555,6 +4563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arctic Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 164157136723221969, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
+      propertyPath: m_TagString
+      value: Sign
+      objectReference: {fileID: 0}
     - target: {fileID: 3377417843970630864, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
       propertyPath: textUI
       value: 
@@ -4779,6 +4791,10 @@ PrefabInstance:
     - target: {fileID: 164157136723221969, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
       propertyPath: m_Name
       value: Ocean Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 164157136723221969, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
+      propertyPath: m_TagString
+      value: Sign
       objectReference: {fileID: 0}
     - target: {fileID: 3377417843970630864, guid: 70f1415fd23528b4ea3cfefe6ca5db54, type: 3}
       propertyPath: textUI

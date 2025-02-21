@@ -23,6 +23,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable = other.GetComponent<IInteractable>();
         }
+
+        else if (other.CompareTag("Sign")) 
+        {
+            currentInteractable = other.GetComponent<IInteractable>();
+        }
     
     }
 
@@ -33,6 +38,11 @@ public class PlayerInteraction : MonoBehaviour
             currentInteractable = null;
         }
         else if (other.CompareTag("Penguin"))
+        {
+            currentInteractable = null;
+        }
+
+        else if (other.CompareTag("Sign"))
         {
             currentInteractable = null;
         }
