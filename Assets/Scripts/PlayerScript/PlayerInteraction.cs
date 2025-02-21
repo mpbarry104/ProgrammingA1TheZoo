@@ -9,7 +9,32 @@ public class PlayerInteraction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
             currentInteractable.Interact();
-            Debug.Log("Interacting with the octopus.");
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Octopus")) 
+        {
+            currentInteractable = other.GetComponent<IInteractable>();
+        }
+            
+        else if (other.CompareTag("Penguin")) 
+        {
+            currentInteractable = other.GetComponent<IInteractable>();
+        }
+    
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Octopus"))
+        {
+            currentInteractable = null;
+        }
+        else if (other.CompareTag("Penguin"))
+        {
+            currentInteractable = null;
         }
     }
     
