@@ -33,6 +33,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable = other.GetComponent<IInteractable>();
         }
+
+        else if (other.CompareTag("Gorilla"))
+        {
+            currentInteractable = other.GetComponent<IInteractable>();
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -52,6 +57,11 @@ public class PlayerInteraction : MonoBehaviour
         }
 
         else if (other.CompareTag("Raccoon"))
+        {
+            currentInteractable = null;
+        }
+
+        else if (other.CompareTag("Gorilla"))
         {
             currentInteractable = null;
         }
