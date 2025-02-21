@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class SignInteraction2D : MonoBehaviour
 {
     public GameObject textUI;

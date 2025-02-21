@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Octopus : Animal
+public class Octopus : Animal, IInteractable
 {
     public bool CanRegenerate { get; set; }
 
@@ -17,6 +17,12 @@ public class Octopus : Animal
 
     public void Regenerate()
     {
-       Debug.Log("Octopus is regenerating its lost leg!");
+        Debug.Log("Octopus is regenerating its lost leg!");
+    }
+
+    public void Interact()
+    {
+        Debug.Log("You poke the octopus, and it responds with a bubbly sound!");
+        MakeSound();
     }
 }
