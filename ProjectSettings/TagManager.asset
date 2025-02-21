@@ -54,5 +54,8 @@ TagManager:
   - name: Animal
     uniqueID: 3120591759
     locked: 0
+  - name: border
+    uniqueID: 2274517933
+    locked: 0
   m_RenderingLayers:
   - Default
