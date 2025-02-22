@@ -3,12 +3,17 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     private IInteractable currentInteractable;
+    private IRead currentInteract;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
             currentInteractable.Interact();
+        }
+        if (Input.GetKeyDown(KeyCode.E) && currentInteract != null)
+        {
+            currentInteract.InteractSign();
         }
     }
 
@@ -26,7 +31,7 @@ public class PlayerInteraction : MonoBehaviour
 
         else if (other.CompareTag("Sign"))
         {
-            currentInteractable = other.GetComponent<IInteractable>();
+            currentInteract = other.GetComponent<IRead>();
         }
 
         else if (other.CompareTag("Raccoon"))
@@ -53,7 +58,7 @@ public class PlayerInteraction : MonoBehaviour
 
         else if (other.CompareTag("Sign"))
         {
-            currentInteractable = null;
+            currentInteract = null;
         }
 
         else if (other.CompareTag("Raccoon"))
